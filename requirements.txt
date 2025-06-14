@@ -1,6 +1,6 @@
 flask
 flask-cors
-playwright
 beautifulsoup4
-sentence-transformers
+requests
 openai
+playwright
