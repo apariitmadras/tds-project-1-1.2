@@ -31,7 +31,7 @@ def api():
             return jsonify({"error": "No question provided"}), 400
 
         response = client.chat.completions.create(
-            model="gpt-4",
+            model="gpt-3.5-turbo",
             messages=[
                 {"role": "system", "content": "You are a helpful TA for the IITM TDS course. Answer based only on the context."},
                 {"role": "user", "content": f"Context:\n{context_text}\n\nQuestion:\n{question}"}
